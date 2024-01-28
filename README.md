@@ -12,7 +12,7 @@ Sensory Feedback ile kullanıcılara, SwiftUI componentleri ile etkileşime girm
 
 Bu proje, iOS uygulamalarında haptic feedbacklerin kolayca entegre edilmesini sağlar. Haptic feedbackler, kullanıcı deneyimini zenginleştiren ve etkileşimleri daha duyarlı hale getiren önemli bir özelliktir. Bu kütüphane, çeşitli haptic feedback türlerini destekler ve geliştiricilere haptic geri bildirimlerin uygulanmasını kolaylaştırır.
 
-## .sensoryFeedback (SwiftUI Yerel Desteğiyle)
+## .sensoryFeedback (SwiftUI)
 Kullanıcılara dokunsal geri bildirim sağlamak için kullanılan bir modifikatördür. Bu geri bildirim, kullanıcıların bir işlemin tamamlandığını, bir seçimin yapıldığını veya bir eylemin başarılı veya başarısız olduğunu anlamalarına yardımcı olabilir. UIKit ihtiyacını ortadan kaldırarak native component desteği sağlanmıştır (iOS 17 ve üstü sürümlerde çalışır 😞).
 
 ```swift
