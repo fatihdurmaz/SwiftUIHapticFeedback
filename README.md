@@ -23,27 +23,26 @@ Kullanıcılara dokunsal geri bildirim sağlamak için kullanılan bir modifikat
     @State private var completeWarning = false
     @State private var impactLight = false
 
-
-Button("Light") {
-    impactLight.toggle()
-}
-.buttonStyle(.borderedProminent)
-.sensoryFeedback(.impact(weight: .light), trigger: impactLight)
-
-Button("Error") {
-    completeError.toggle()
-}
-.buttonStyle(.borderedProminent)
-.tint(.red)
-.sensoryFeedback(.start, trigger: completeWarning)
-
-Toggle("Toogle", isOn: $isOn)
-    .sensoryFeedback(.selection, trigger: isOn)
-
-Stepper("Stepper \(stepperValue)", value: $stepperValue, in: 1...100, step: 1)
-    .sensoryFeedback(trigger: stepperValue){oldValue, newValue in
-        return oldValue < newValue ? .increase : .decrease
+    Button("Light") {
+        impactLight.toggle()
     }
+    .buttonStyle(.borderedProminent)
+    .sensoryFeedback(.impact(weight: .light), trigger: impactLight)
+
+    Button("Error") {
+        completeError.toggle()
+    }
+    .buttonStyle(.borderedProminent)
+    .tint(.red)
+    .sensoryFeedback(.start, trigger: completeWarning)
+
+    Toggle("Toogle", isOn: $isOn)
+        .sensoryFeedback(.selection, trigger: isOn)
+    
+    Stepper("Stepper \(stepperValue)", value: $stepperValue, in: 1...100, step: 1)
+        .sensoryFeedback(trigger: stepperValue){oldValue, newValue in
+            return oldValue < newValue ? .increase : .decrease
+}
 ```
 
 ## UIFeedbackGenerator (UIKit Kullanarak)
@@ -52,22 +51,22 @@ UIKit bileşenlerinden; iOS platformunda geri bildirim oluşturmak için kullan�
 ### UIImpactFeedbackGenerator
 Bu sınıf, kullanıcıya bir fiziksel etki gerçekleşmiş gibi bir geri bildirim sağlar. 
 ```swift
-UIImpactFeedbackGenerator(style: .light).impactOccurred()
-UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
+    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+    UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+    UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
 ```
 ### UINotificationFeedbackGenerator
 Bu sınıf, kullanıcıya bir bildirim veya uyarı olduğunu bildiren geri bildirimler sağlar. 
 ```swift
-UINotificationFeedbackGenerator().notificationOccurred(.success)
-UINotificationFeedbackGenerator().notificationOccurred(.warning)
-UINotificationFeedbackGenerator().notificationOccurred(.error)
+    UINotificationFeedbackGenerator().notificationOccurred(.success)
+    UINotificationFeedbackGenerator().notificationOccurred(.warning)
+    UINotificationFeedbackGenerator().notificationOccurred(.error)
 ```
 ### UISelectionFeedbackGenerator
 Bu sınıf, kullanıcı arayüzünde bir seçim yapıldığında geri bildirim sağlar. 
 ```swift
-Toggle("Toogle", isOn: $isOn)
-  .onChange(of: isOn) {
-      UISelectionFeedbackGenerator().selectionChanged()
-}
+    Toggle("Toogle", isOn: $isOn)
+      .onChange(of: isOn) {
+          UISelectionFeedbackGenerator().selectionChanged()
+    }
 ```
