@@ -9,8 +9,9 @@
 [<img src="https://yourimageshare.com/ib/5NduZtgpQQ.webp">](https://www.youtube.com/watch?v=81q0mCOHyrM "SwiftUI Push Notifications")
 
 iOS 17 ile birlikte kullanıcılarla etkileşimde bulunmak için daha önce kullandığımız UIFeedbackGenerator sınıfına ihtiyacımız kalmadı.
-Sensory Feedback ile kullanıcılara, SwiftUI componentleri ile etkileşime girmesini ve geri bildirimde bulunmasını sağlayabiliriz.
+.sensoryFeedback ile kullanıcıların, SwiftUI componentleri ile etkileşime girmesini ve geri bildirimde bulunmasını sağlayabiliriz.
 
+## Hakkında
 Bu proje, iOS uygulamalarında haptic feedbacklerin kolayca entegre edilmesini sağlar. Haptic feedbackler, kullanıcı deneyimini zenginleştiren ve etkileşimleri daha duyarlı hale getiren önemli bir özelliktir. Bu kütüphane, çeşitli haptic feedback türlerini destekler ve geliştiricilere haptic geri bildirimlerin uygulanmasını kolaylaştırır.
 
 ## .sensoryFeedback (SwiftUI)
