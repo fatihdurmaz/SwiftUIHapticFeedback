@@ -6,7 +6,7 @@
 ![Platform](https://img.shields.io/badge/SwiftUI-4-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-[<img src="https://yourimageshare.com/ib/5NduZtgpQQ.webp">](https://www.youtube.com/watch?v=81q0mCOHyrM "SwiftUI Push Notifications")
+[<img src="https://yourimageshare.com/ib/5NduZtgpQQ.webp">](https://www.youtube.com/watch?v=81q0mCOHyrM "SwiftUI Haptic Feedbacks")
 
 iOS 17 ile birlikte kullanıcılarla etkileşimde bulunmak için daha önce kullandığımız UIFeedbackGenerator sınıfına ihtiyacımız kalmadı.
 .sensoryFeedback ile kullanıcıların, SwiftUI componentleri ile etkileşime girmesini ve geri bildirimde bulunmasını sağlayabiliriz.
