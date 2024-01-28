@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE28D75B2B657E97002AD401 /* SensoryFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE28D75A2B657E97002AD401 /* SensoryFeedbackView.swift */; };
 		DED75D702B6305A900C21E1A /* SwiftUIHapticFeedbackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED75D6F2B6305A900C21E1A /* SwiftUIHapticFeedbackApp.swift */; };
 		DED75D722B6305A900C21E1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED75D712B6305A900C21E1A /* ContentView.swift */; };
 		DED75D742B6305AA00C21E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED75D732B6305AA00C21E1A /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE28D75A2B657E97002AD401 /* SensoryFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensoryFeedbackView.swift; sourceTree = "<group>"; };
 		DED75D6C2B6305A900C21E1A /* SwiftUIHapticFeedback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIHapticFeedback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED75D6F2B6305A900C21E1A /* SwiftUIHapticFeedbackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIHapticFeedbackApp.swift; sourceTree = "<group>"; };
 		DED75D712B6305A900C21E1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				DED75D6F2B6305A900C21E1A /* SwiftUIHapticFeedbackApp.swift */,
 				DED75D712B6305A900C21E1A /* ContentView.swift */,
+				DE28D75A2B657E97002AD401 /* SensoryFeedbackView.swift */,
 				DED75D732B6305AA00C21E1A /* Assets.xcassets */,
 				DED75D752B6305AA00C21E1A /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE28D75B2B657E97002AD401 /* SensoryFeedbackView.swift in Sources */,
 				DED75D722B6305A900C21E1A /* ContentView.swift in Sources */,
 				DED75D702B6305A900C21E1A /* SwiftUIHapticFeedbackApp.swift in Sources */,
 			);
